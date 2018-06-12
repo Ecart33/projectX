@@ -11,15 +11,23 @@
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
-	<string>$(PRODUCT_NAME)</string>
+	<string>links</string>
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>CFBundleShortVersionString</key>
 	<string>1.0</string>
 	<key>CFBundleVersion</key>
 	<string>1</string>
+	<key>Google Places API Key</key>
+	<string>AIzaSyDxsj4p01EaidOig0dQVcjp0Rp1YlWG6JQ</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>MGLMapboxAccessToken</key>
+	<string>pk.eyJ1IjoidGJsYWNrIiwiYSI6ImNqaDlnbHowaTBjajczMGw3engwYTdoaHAifQ.ay2GI8C12tKfYQyLzRzOQw</string>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>Accept to get location</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Shows your location on the map and helps improve OpenStreetMap.</string>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>
@@ -41,13 +49,5 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
-	<key>Google Places API Key</key>
-	<string>AIzaSyDxsj4p01EaidOig0dQVcjp0Rp1YlWG6JQ</string>
-	<key>MGLMapboxAccessToken</key>
-	<string>pk.eyJ1IjoidGJsYWNrIiwiYSI6ImNqaDlnbHowaTBjajczMGw3engwYTdoaHAifQ.ay2GI8C12tKfYQyLzRzOQw</string>
-	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>Shows your location on the map and helps improve OpenStreetMap.</string>
-	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
-	<string>Accept to get location</string>
 </dict>
 </plist>

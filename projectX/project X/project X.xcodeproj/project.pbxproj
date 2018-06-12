@@ -7,7 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		98118AA720C0A87A00120C1D /* GetDistance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98118AA620C0A87A00120C1D /* GetDistance.swift */; };
+		98118ABA20C0C9B300120C1D /* MapboxNavigation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98118AB920C0C9B300120C1D /* MapboxNavigation.framework */; };
+		98118ABC20C0C9BB00120C1D /* MapboxDirections.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98118ABB20C0C9BB00120C1D /* MapboxDirections.framework */; };
+		98118ABE20C0C9C300120C1D /* MapboxCoreNavigation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98118ABD20C0C9C300120C1D /* MapboxCoreNavigation.framework */; };
 		981C020720B228DB0027B6EA /* PlaceSearcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 981C020620B228DB0027B6EA /* PlaceSearcher.swift */; };
+		982F413120CF456300C33E53 /* Circumcenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 982F413020CF456300C33E53 /* Circumcenter.swift */; };
+		9855A54420C9745D008BFEF5 /* FriendButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9855A54320C9745C008BFEF5 /* FriendButton.swift */; };
 		98619ED420B45233002BB115 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98619ED320B45233002BB115 /* Alamofire.framework */; };
 		98619ED820B454F9002BB115 /* Alamofire.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 98619ED720B454F9002BB115 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		98A8E41520ACBA1E0064DE00 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98A8E41420ACBA1E0064DE00 /* AppDelegate.swift */; };
@@ -18,10 +24,31 @@
 		98A8E42A20ACBA1E0064DE00 /* project_XTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98A8E42920ACBA1E0064DE00 /* project_XTests.swift */; };
 		98A8E43520ACBA1E0064DE00 /* project_XUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98A8E43420ACBA1E0064DE00 /* project_XUITests.swift */; };
 		98B100B420B6F24E00A8C70C /* Mapbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98B100B320B6F24E00A8C70C /* Mapbox.framework */; };
-		98B100B820B6F2D300A8C70C /* Mapbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98B100B720B6F2D300A8C70C /* Mapbox.framework */; };
 		98B100B920B6F2D300A8C70C /* Mapbox.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 98B100B720B6F2D300A8C70C /* Mapbox.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		98B100BB20B6F30800A8C70C /* MapboxAddPlace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98B100BA20B6F30800A8C70C /* MapboxAddPlace.swift */; };
 		98B100BD20B732DF00A8C70C /* AnnotatedPoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98B100BC20B732DF00A8C70C /* AnnotatedPoints.swift */; };
+		98CBE22120C56A47000D2B56 /* Mapbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98CBE22020C56A47000D2B56 /* Mapbox.framework */; };
+		98CBE22420C56A5C000D2B56 /* MapboxCoreNavigation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98CBE22320C56A5C000D2B56 /* MapboxCoreNavigation.framework */; };
+		98CBE22520C56A5C000D2B56 /* MapboxCoreNavigation.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 98CBE22320C56A5C000D2B56 /* MapboxCoreNavigation.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		98CBE22720C56A60000D2B56 /* MapboxDirections.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98CBE22620C56A60000D2B56 /* MapboxDirections.framework */; };
+		98CBE22820C56A60000D2B56 /* MapboxDirections.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 98CBE22620C56A60000D2B56 /* MapboxDirections.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		98CBE22A20C56A67000D2B56 /* MapboxNavigation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98CBE22920C56A66000D2B56 /* MapboxNavigation.framework */; };
+		98CBE22B20C56A67000D2B56 /* MapboxNavigation.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 98CBE22920C56A66000D2B56 /* MapboxNavigation.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		98CBE23820C5BF4D000D2B56 /* Polyline.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98CBE23720C5BF4C000D2B56 /* Polyline.framework */; };
+		98CBE23920C5BF4D000D2B56 /* Polyline.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 98CBE23720C5BF4C000D2B56 /* Polyline.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		98CBE23B20C5BF93000D2B56 /* MapboxMobileEvents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98CBE23A20C5BF92000D2B56 /* MapboxMobileEvents.framework */; };
+		98CBE23D20C5BF9E000D2B56 /* MapboxMobileEvents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98CBE23C20C5BF9E000D2B56 /* MapboxMobileEvents.framework */; };
+		98CBE23E20C5BF9E000D2B56 /* MapboxMobileEvents.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 98CBE23C20C5BF9E000D2B56 /* MapboxMobileEvents.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		98CBE24020C5BFF2000D2B56 /* Turf.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98CBE23F20C5BFF2000D2B56 /* Turf.framework */; };
+		98CBE24220C5BFFE000D2B56 /* Turf.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98CBE24120C5BFFE000D2B56 /* Turf.framework */; };
+		98CBE24320C5BFFE000D2B56 /* Turf.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 98CBE24120C5BFFE000D2B56 /* Turf.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		98CBE24520C5C00B000D2B56 /* Solar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98CBE24420C5C00A000D2B56 /* Solar.framework */; };
+		98CBE24720C5C012000D2B56 /* Solar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98CBE24620C5C012000D2B56 /* Solar.framework */; };
+		98CBE24820C5C012000D2B56 /* Solar.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 98CBE24620C5C012000D2B56 /* Solar.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		98CBE24A20C5C028000D2B56 /* MapboxSpeech.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98CBE24920C5C027000D2B56 /* MapboxSpeech.framework */; };
+		98CBE24C20C5C032000D2B56 /* MapboxSpeech.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98CBE24B20C5C032000D2B56 /* MapboxSpeech.framework */; };
+		98CBE24D20C5C032000D2B56 /* MapboxSpeech.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 98CBE24B20C5C032000D2B56 /* MapboxSpeech.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		98D7768C20BEEA95004B7CCD /* PlacesFromMid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D7768B20BEEA95004B7CCD /* PlacesFromMid.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,15 +75,29 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				98CBE23920C5BF4D000D2B56 /* Polyline.framework in CopyFiles */,
 				98619ED820B454F9002BB115 /* Alamofire.framework in CopyFiles */,
+				98CBE22B20C56A67000D2B56 /* MapboxNavigation.framework in CopyFiles */,
+				98CBE24320C5BFFE000D2B56 /* Turf.framework in CopyFiles */,
+				98CBE22820C56A60000D2B56 /* MapboxDirections.framework in CopyFiles */,
 				98B100B920B6F2D300A8C70C /* Mapbox.framework in CopyFiles */,
+				98CBE23E20C5BF9E000D2B56 /* MapboxMobileEvents.framework in CopyFiles */,
+				98CBE24D20C5C032000D2B56 /* MapboxSpeech.framework in CopyFiles */,
+				98CBE24820C5C012000D2B56 /* Solar.framework in CopyFiles */,
+				98CBE22520C56A5C000D2B56 /* MapboxCoreNavigation.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		98118AA620C0A87A00120C1D /* GetDistance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetDistance.swift; sourceTree = "<group>"; };
+		98118AB920C0C9B300120C1D /* MapboxNavigation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapboxNavigation.framework; path = ../Carthage/Build/iOS/MapboxNavigation.framework; sourceTree = "<group>"; };
+		98118ABB20C0C9BB00120C1D /* MapboxDirections.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapboxDirections.framework; path = ../Carthage/Build/iOS/MapboxDirections.framework; sourceTree = "<group>"; };
+		98118ABD20C0C9C300120C1D /* MapboxCoreNavigation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapboxCoreNavigation.framework; path = ../Carthage/Build/iOS/MapboxCoreNavigation.framework; sourceTree = "<group>"; };
 		981C020620B228DB0027B6EA /* PlaceSearcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceSearcher.swift; sourceTree = "<group>"; };
+		982F413020CF456300C33E53 /* Circumcenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Circumcenter.swift; sourceTree = "<group>"; };
+		9855A54320C9745C008BFEF5 /* FriendButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendButton.swift; sourceTree = "<group>"; };
 		98619ED320B45233002BB115 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Alamofire.framework; sourceTree = "<group>"; };
 		98619ED720B454F9002BB115 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Alamofire.framework; sourceTree = "<group>"; };
 		98A8E41120ACBA1E0064DE00 /* project X.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "project X.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -76,6 +117,20 @@
 		98B100B720B6F2D300A8C70C /* Mapbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Mapbox.framework; sourceTree = "<group>"; };
 		98B100BA20B6F30800A8C70C /* MapboxAddPlace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapboxAddPlace.swift; sourceTree = "<group>"; };
 		98B100BC20B732DF00A8C70C /* AnnotatedPoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnnotatedPoints.swift; sourceTree = "<group>"; };
+		98CBE22020C56A47000D2B56 /* Mapbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Mapbox.framework; sourceTree = "<group>"; };
+		98CBE22320C56A5C000D2B56 /* MapboxCoreNavigation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MapboxCoreNavigation.framework; sourceTree = "<group>"; };
+		98CBE22620C56A60000D2B56 /* MapboxDirections.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MapboxDirections.framework; sourceTree = "<group>"; };
+		98CBE22920C56A66000D2B56 /* MapboxNavigation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MapboxNavigation.framework; sourceTree = "<group>"; };
+		98CBE23720C5BF4C000D2B56 /* Polyline.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Polyline.framework; sourceTree = "<group>"; };
+		98CBE23A20C5BF92000D2B56 /* MapboxMobileEvents.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MapboxMobileEvents.framework; sourceTree = "<group>"; };
+		98CBE23C20C5BF9E000D2B56 /* MapboxMobileEvents.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MapboxMobileEvents.framework; sourceTree = "<group>"; };
+		98CBE23F20C5BFF2000D2B56 /* Turf.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Turf.framework; sourceTree = "<group>"; };
+		98CBE24120C5BFFE000D2B56 /* Turf.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Turf.framework; sourceTree = "<group>"; };
+		98CBE24420C5C00A000D2B56 /* Solar.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Solar.framework; sourceTree = "<group>"; };
+		98CBE24620C5C012000D2B56 /* Solar.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Solar.framework; sourceTree = "<group>"; };
+		98CBE24920C5C027000D2B56 /* MapboxSpeech.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MapboxSpeech.framework; sourceTree = "<group>"; };
+		98CBE24B20C5C032000D2B56 /* MapboxSpeech.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MapboxSpeech.framework; sourceTree = "<group>"; };
+		98D7768B20BEEA95004B7CCD /* PlacesFromMid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesFromMid.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,9 +138,24 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				98CBE23D20C5BF9E000D2B56 /* MapboxMobileEvents.framework in Frameworks */,
+				98CBE22120C56A47000D2B56 /* Mapbox.framework in Frameworks */,
+				98CBE22720C56A60000D2B56 /* MapboxDirections.framework in Frameworks */,
+				98CBE24020C5BFF2000D2B56 /* Turf.framework in Frameworks */,
+				98CBE24520C5C00B000D2B56 /* Solar.framework in Frameworks */,
+				98118ABE20C0C9C300120C1D /* MapboxCoreNavigation.framework in Frameworks */,
+				98CBE22A20C56A67000D2B56 /* MapboxNavigation.framework in Frameworks */,
+				98CBE23B20C5BF93000D2B56 /* MapboxMobileEvents.framework in Frameworks */,
+				98CBE24220C5BFFE000D2B56 /* Turf.framework in Frameworks */,
+				98118ABC20C0C9BB00120C1D /* MapboxDirections.framework in Frameworks */,
 				98619ED420B45233002BB115 /* Alamofire.framework in Frameworks */,
+				98CBE23820C5BF4D000D2B56 /* Polyline.framework in Frameworks */,
+				98CBE24720C5C012000D2B56 /* Solar.framework in Frameworks */,
+				98CBE22420C56A5C000D2B56 /* MapboxCoreNavigation.framework in Frameworks */,
+				98CBE24A20C5C028000D2B56 /* MapboxSpeech.framework in Frameworks */,
 				98B100B420B6F24E00A8C70C /* Mapbox.framework in Frameworks */,
-				98B100B820B6F2D300A8C70C /* Mapbox.framework in Frameworks */,
+				98118ABA20C0C9B300120C1D /* MapboxNavigation.framework in Frameworks */,
+				98CBE24C20C5C032000D2B56 /* MapboxSpeech.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -109,7 +179,20 @@
 		98A8E40820ACBA1E0064DE00 = {
 			isa = PBXGroup;
 			children = (
+				98CBE24920C5C027000D2B56 /* MapboxSpeech.framework */,
+				98CBE24B20C5C032000D2B56 /* MapboxSpeech.framework */,
+				98CBE24420C5C00A000D2B56 /* Solar.framework */,
+				98CBE24620C5C012000D2B56 /* Solar.framework */,
+				98CBE23F20C5BFF2000D2B56 /* Turf.framework */,
+				98CBE24120C5BFFE000D2B56 /* Turf.framework */,
+				98CBE23A20C5BF92000D2B56 /* MapboxMobileEvents.framework */,
+				98CBE23C20C5BF9E000D2B56 /* MapboxMobileEvents.framework */,
+				98CBE23720C5BF4C000D2B56 /* Polyline.framework */,
+				98CBE22920C56A66000D2B56 /* MapboxNavigation.framework */,
+				98CBE22620C56A60000D2B56 /* MapboxDirections.framework */,
+				98CBE22320C56A5C000D2B56 /* MapboxCoreNavigation.framework */,
 				98B100B720B6F2D300A8C70C /* Mapbox.framework */,
+				98CBE22020C56A47000D2B56 /* Mapbox.framework */,
 				98619ED320B45233002BB115 /* Alamofire.framework */,
 				98619ED720B454F9002BB115 /* Alamofire.framework */,
 				98A8E41320ACBA1E0064DE00 /* project X */,
@@ -133,8 +216,12 @@
 		98A8E41320ACBA1E0064DE00 /* project X */ = {
 			isa = PBXGroup;
 			children = (
+				9855A54320C9745C008BFEF5 /* FriendButton.swift */,
 				98A8E41420ACBA1E0064DE00 /* AppDelegate.swift */,
 				98A8E41620ACBA1E0064DE00 /* ViewController.swift */,
+				98118AA620C0A87A00120C1D /* GetDistance.swift */,
+				98D7768B20BEEA95004B7CCD /* PlacesFromMid.swift */,
+				982F413020CF456300C33E53 /* Circumcenter.swift */,
 				981C020620B228DB0027B6EA /* PlaceSearcher.swift */,
 				98B100BA20B6F30800A8C70C /* MapboxAddPlace.swift */,
 				98B100BC20B732DF00A8C70C /* AnnotatedPoints.swift */,
@@ -167,6 +254,9 @@
 		98B100B220B6F24E00A8C70C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				98118ABD20C0C9C300120C1D /* MapboxCoreNavigation.framework */,
+				98118ABB20C0C9BB00120C1D /* MapboxDirections.framework */,
+				98118AB920C0C9B300120C1D /* MapboxNavigation.framework */,
 				98B100B320B6F24E00A8C70C /* Mapbox.framework */,
 			);
 			name = Frameworks;
@@ -182,7 +272,7 @@
 				98A8E40D20ACBA1E0064DE00 /* Sources */,
 				98A8E40E20ACBA1E0064DE00 /* Frameworks */,
 				98A8E40F20ACBA1E0064DE00 /* Resources */,
-				98619ED520B45472002BB115 /* ShellScript */,
+				98619ED520B45472002BB115 /* Run Script */,
 				98619ED620B454DA002BB115 /* CopyFiles */,
 				98B100B520B6F25E00A8C70C /* ShellScript */,
 			);
@@ -305,13 +395,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		98619ED520B45472002BB115 /* ShellScript */ = {
+		98619ED520B45472002BB115 /* Run Script */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 8;
 			files = (
 			);
 			inputPaths = (
 			);
+			name = "Run Script";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 1;
@@ -320,7 +411,7 @@
 		};
 		98B100B520B6F25E00A8C70C /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
+			buildActionMask = 12;
 			files = (
 			);
 			inputPaths = (
@@ -329,7 +420,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "bash\nbash \"${BUILT_PRODUCTS_DIR}/${FRAMEWORKS_FOLDER_PATH}/Mapbox.framework/strip-frameworks.sh\"";
+			shellScript = "bash \"${BUILT_PRODUCTS_DIR}/${FRAMEWORKS_FOLDER_PATH}/Mapbox.framework/strip-frameworks.sh\"";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -338,6 +429,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				98118AA720C0A87A00120C1D /* GetDistance.swift in Sources */,
+				9855A54420C9745D008BFEF5 /* FriendButton.swift in Sources */,
+				98D7768C20BEEA95004B7CCD /* PlacesFromMid.swift in Sources */,
+				982F413120CF456300C33E53 /* Circumcenter.swift in Sources */,
 				98B100BB20B6F30800A8C70C /* MapboxAddPlace.swift in Sources */,
 				98A8E41720ACBA1E0064DE00 /* ViewController.swift in Sources */,
 				98B100BD20B732DF00A8C70C /* AnnotatedPoints.swift in Sources */,
@@ -508,7 +603,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9G93US38TD;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
@@ -517,8 +614,9 @@
 				);
 				INFOPLIST_FILE = "project X/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "X.project-X";
+				PRODUCT_BUNDLE_IDENTIFIER = "X.project-X.bundleIden";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -528,7 +626,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9G93US38TD;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
@@ -537,8 +637,9 @@
 				);
 				INFOPLIST_FILE = "project X/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "X.project-X";
+				PRODUCT_BUNDLE_IDENTIFIER = "X.project-X.bundleIden";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -549,11 +650,14 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "project XTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "X.project-XTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/project X.app/project X";
@@ -565,11 +669,14 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "project XTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "X.project-XTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/project X.app/project X";
@@ -580,11 +687,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "project XUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "X.project-XUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = "project X";
@@ -595,11 +705,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "project XUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "X.project-XUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = "project X";

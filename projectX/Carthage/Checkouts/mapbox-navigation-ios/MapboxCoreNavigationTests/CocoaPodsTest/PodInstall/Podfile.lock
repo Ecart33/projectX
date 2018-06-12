@@ -1,0 +1,59 @@
+PODS:
+  - Mapbox-iOS-SDK (3.7.4)
+  - MapboxCoreNavigation (0.13.1):
+    - MapboxDirections.swift (~> 0.16.1)
+    - MapboxMobileEvents (~> 0.3)
+    - Turf (~> 0.0.4)
+  - MapboxDirections.swift (0.16.1):
+    - Polyline (~> 4.2)
+  - MapboxMobileEvents (0.3.0)
+  - MapboxNavigation (0.13.1):
+    - Mapbox-iOS-SDK (~> 3.6)
+    - MapboxCoreNavigation (= 0.13.1)
+    - MapboxSpeech (~> 0.0.1)
+    - SDWebImage (~> 4.1)
+    - Solar (~> 2.1)
+    - Turf (~> 0.0.4)
+  - MapboxSpeech (0.0.1)
+  - Polyline (4.2.0)
+  - SDWebImage (4.3.0):
+    - SDWebImage/Core (= 4.3.0)
+  - SDWebImage/Core (4.3.0)
+  - Solar (2.1.0)
+  - Turf (0.0.4)
+
+DEPENDENCIES:
+  - MapboxCoreNavigation (from `https://github.com/mapbox/mapbox-navigation-ios.git`, branch `master`)
+  - MapboxNavigation (from `https://github.com/mapbox/mapbox-navigation-ios.git`, branch `master`)
+
+EXTERNAL SOURCES:
+  MapboxCoreNavigation:
+    :branch: master
+    :git: https://github.com/mapbox/mapbox-navigation-ios.git
+  MapboxNavigation:
+    :branch: master
+    :git: https://github.com/mapbox/mapbox-navigation-ios.git
+
+CHECKOUT OPTIONS:
+  MapboxCoreNavigation:
+    :commit: 518a3d1b8ab327f6bb895b10071bc113ffddb84a
+    :git: https://github.com/mapbox/mapbox-navigation-ios.git
+  MapboxNavigation:
+    :commit: 518a3d1b8ab327f6bb895b10071bc113ffddb84a
+    :git: https://github.com/mapbox/mapbox-navigation-ios.git
+
+SPEC CHECKSUMS:
+  Mapbox-iOS-SDK: fb994b9e46df7b909f58dd0c5df5a44f58cdab04
+  MapboxCoreNavigation: 47b9983ceb8d52d4d8879a3bbf8afe1277de7166
+  MapboxDirections.swift: 750b7c94e7e1d85fcfe4ccc815423f33164178dc
+  MapboxMobileEvents: 246843e366f6687f697098673ef78a858c0d8619
+  MapboxNavigation: 7367316f879b252096a9d54726e7ae783ef0fb6b
+  MapboxSpeech: 6cc9b3d53adc2988af3ebc704dd17907b84a3f9f
+  Polyline: 3d69f75bb136357e27291d439d0436c6ebda57a4
+  SDWebImage: 6da6c8bca115addc4de8613362e1b15f66333825
+  Solar: 2dc6e7cc39186cb0c8228fa08df76fb50c7d8f24
+  Turf: 6c169618fa671e3f8a7b764b5b3332053ad6110e
+
+PODFILE CHECKSUM: 13f94add0160d7ec0d5c512e193f75911b46950d
+
+COCOAPODS: 1.4.0

@@ -1,0 +1,97 @@
+import XCTest
+import OHHTTPStubs
+@testable import MapboxDirections
+
+class SpokenInstructionsTests: XCTestCase {
+    override func tearDown() {
+        OHHTTPStubs.removeAllStubs()
+        super.tearDown()
+    }
+    
+    func testInstructions() {
+        let expectation = self.expectation(description: "calculating directions should return results")
+        
+        let queryParams: [String: String?] = [
+            "alternatives": "false",
+            "geometries": "polyline",
+            "overview": "full",
+            "steps": "true",
+            "continue_straight": "true",
+            "access_token": BogusToken,
+            "voice_instructions": "true",
+            "voice_units": "imperial",
+            "banner_instructions": "true"
+        ]
+        
+        stub(condition: isHost("api.mapbox.com")
+            && containsQueryParams(queryParams)) { _ in
+                let path = Bundle(for: type(of: self)).path(forResource: "instructions", ofType: "json")
+                return OHHTTPStubsResponse(fileAtPath: path!, statusCode: 200, headers: ["Content-Type": "application/json"])
+        }
+        
+        let options = RouteOptions(coordinates: [
+            CLLocationCoordinate2D(latitude: 37.780602, longitude: -122.431373),
+            CLLocationCoordinate2D(latitude: 37.758859, longitude: -122.404058),
+            ], profileIdentifier: .automobileAvoidingTraffic)
+        options.shapeFormat = .polyline
+        options.includesSteps = true
+        options.includesAlternativeRoutes = false
+        options.routeShapeResolution = .full
+        options.includesSpokenInstructions = true
+        options.distanceMeasurementSystem = .imperial
+        options.includesVisualInstructions = true
+        var route: Route?
+        let task = Directions(accessToken: BogusToken).calculate(options) { (waypoints, routes, error) in
+            XCTAssertNil(error, "Error: \(error!.localizedDescription)")
+            
+            XCTAssertNotNil(routes)
+            XCTAssertEqual(routes!.count, 1)
+            route = routes!.first!
+            
+            expectation.fulfill()
+        }
+        XCTAssertNotNil(task)
+        
+        waitForExpectations(timeout: 2) { (error) in
+            XCTAssertNil(error, "Error: \(error!.localizedDescription)")
+            XCTAssertEqual(task.state, .completed)
+        }
+        
+        XCTAssertNotNil(route)
+        XCTAssertEqual(route!.routeIdentifier, "cje68ha21000775o7je87k5em")
+        
+        let leg = route!.legs.first!
+        let step = leg.steps[1]
+        
+        XCTAssertEqual(step.instructionsSpokenAlongStep!.count, 3)
+        
+        let spokenInstructions = step.instructionsSpokenAlongStep!
+        
+        XCTAssertEqual(spokenInstructions[0].distanceAlongStep, 1001.4)
+        XCTAssertEqual(spokenInstructions[0].ssmlText, "<speak><amazon:effect name=\"drc\"><prosody rate=\"1.08\">Continue on Baker Street for a half mile</prosody></amazon:effect></speak>")
+        XCTAssertEqual(spokenInstructions[0].text, "Continue on Baker Street for a half mile")
+        XCTAssertEqual(spokenInstructions[1].ssmlText, "<speak><amazon:effect name=\"drc\"><prosody rate=\"1.08\">In a quarter mile, turn left onto Oak Street</prosody></amazon:effect></speak>")
+        XCTAssertEqual(spokenInstructions[1].text, "In a quarter mile, turn left onto Oak Street")
+        XCTAssertEqual(spokenInstructions[2].ssmlText, "<speak><amazon:effect name=\"drc\"><prosody rate=\"1.08\">Turn left onto Oak Street</prosody></amazon:effect></speak>")
+        XCTAssertEqual(spokenInstructions[2].text, "Turn left onto Oak Street")
+        
+        let visualInstructions = step.instructionsDisplayedAlongStep
+        
+        XCTAssertNotNil(visualInstructions)
+        XCTAssertEqual(visualInstructions?.first?.primaryInstruction.text, "Oak Street")
+        XCTAssertEqual(visualInstructions?.first?.primaryInstruction.textComponents.first!.text, "Oak Street")
+        XCTAssertEqual(visualInstructions?.first?.distanceAlongStep, 1001.4)
+        XCTAssertEqual(visualInstructions?.first?.primaryInstruction.degrees, 135)
+        XCTAssertEqual(visualInstructions?.first?.primaryInstruction.maneuverType, .turn)
+        XCTAssertEqual(visualInstructions?.first?.primaryInstruction.maneuverDirection, .left)
+        XCTAssertEqual(visualInstructions?.first?.primaryInstruction.textComponents.first?.type, .text)
+        XCTAssertEqual(visualInstructions?.first?.primaryInstruction.textComponents.first?.abbreviation, "Oak St")
+        XCTAssertEqual(visualInstructions?.first?.primaryInstruction.textComponents.first?.abbreviationPriority, 0)
+        XCTAssertEqual(visualInstructions?.first?.drivingSide, .right)
+        XCTAssertNil(visualInstructions?.first?.secondaryInstruction)
+        
+        XCTAssertEqual(leg.steps[3].instructionsDisplayedAlongStep?.first?.primaryInstruction.textComponents[0].type, .image)
+        XCTAssertEqual(leg.steps[3].instructionsDisplayedAlongStep?.first?.primaryInstruction.textComponents[1].type, .delimiter)
+        XCTAssertEqual(leg.steps[3].instructionsDisplayedAlongStep?.first?.primaryInstruction.textComponents[2].type, .image)
+    }
+}

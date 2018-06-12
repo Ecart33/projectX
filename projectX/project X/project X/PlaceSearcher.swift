@@ -12,7 +12,6 @@ import Alamofire
 class PlaceSearcher {
     func searchPlace(key: String, location: String, radius: String? = "nil", keyword: String? = "nil", type: String? = "nil", minprice: String? = "nil", maxprice: String? = "nil", opennow: String? = "nil", rankby: String? = "nil", completionHandler: @escaping (_ result: Root) -> ()) {
         
-        //print(location)
         //create dictionary from arguments so that it can be switched over
         
         var parameters = [
@@ -29,24 +28,24 @@ class PlaceSearcher {
         
         //initialize url with json return data and location
         var urlString: String = "https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=\(location)"
-        
-        //print (urlString)
+
         
         //override radius if rankby = distance to avoid errors
-        //if (parameters["rankby"] == "distance" && parameters["radius"] != nil) {
-          //  parameters["radius"] = nil
-        //}
+        if (parameters["rankby"]!! == "distance" && parameters["radius"] != nil) {
+            parameters["radius"] = nil
+        }
         
         //create url based off of arguments
         let sortedParameters = parameters.sorted {$0.key < $1.key}
         
         for element in sortedParameters {
-            //print(element.key, element.value)
+            print(element.key, element.value)
             if (element.value != "nil" && element.key != "key" && element.key != "location") {
                 urlString = urlString + "&\(element.key)=\(element.value!)"
             }
         }
         
+        print(urlString)
         
         //add api authentication key to url
         urlString = urlString + "&key=\(key)"
