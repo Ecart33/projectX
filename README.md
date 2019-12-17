@@ -1,2 +1,2 @@
 # projectX
-swerve my bois this is gonna be pretty cools
+Iphone App prototype that finds places to meet based of locations and preferences of friends
